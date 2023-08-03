@@ -11,10 +11,17 @@
   width: 100%;
   height: 10%;
   background-color: rgb(124, 0, 0);
-
   display: flex;
   align-items: center;
   position: relative;
+
+}
+
+
+a{
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
 }
 
 .up > a{
@@ -44,7 +51,6 @@ nav > a{
 #hamburger{
   width: 25px;
   height: 20px;
-  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,6 +73,4 @@ nav > a{
 }
 
 
-a{
-  color: white;
-}
+
