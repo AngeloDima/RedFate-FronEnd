@@ -18,7 +18,22 @@
   width: 65%;
   height: 90%;
   background-color: #c20124;
+  position: relative;
 }
+
+
+.dx > h2{
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  position: absolute;
+  right: 0px;
+  top: 7%;
+  transform: rotate(90deg);
+  color: white;
+  font-weight: 400;
+}
+
 
 
 .upCenter{
@@ -69,6 +84,4 @@ a{
   margin: 0px 0px 0px 8px;
   text-decoration: underline;
   color: #252525;
-
-
 }
