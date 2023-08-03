@@ -14,6 +14,7 @@ import { UomoComponent } from './Categorie/uomo/uomo.component';
 import { DonnaComponent } from './Categorie/donna/donna.component';
 import { UnisexComponent } from './Categorie/unisex/unisex.component';
 import { CatalogoComponent } from './Categorie/catalogo/catalogo.component';
+import { Sec2Component } from './home-page/sec2/sec2.component';
 
 
 
@@ -27,7 +28,8 @@ import { CatalogoComponent } from './Categorie/catalogo/catalogo.component';
     UomoComponent,
     DonnaComponent,
     UnisexComponent,
-    CatalogoComponent
+    CatalogoComponent,
+    Sec2Component
   ],
   imports: [
     BrowserModule,
