@@ -10,6 +10,10 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { Sec1BannerComponent } from './home-page/sec1-banner/sec1-banner.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { UomoComponent } from './Categorie/uomo/uomo.component';
+import { DonnaComponent } from './Categorie/donna/donna.component';
+import { UnisexComponent } from './Categorie/unisex/unisex.component';
+import { CatalogoComponent } from './Categorie/catalogo/catalogo.component';
 
 
 
@@ -19,7 +23,11 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HomePageComponent,
     Sec1BannerComponent,
-    LoginComponent
+    LoginComponent,
+    UomoComponent,
+    DonnaComponent,
+    UnisexComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,

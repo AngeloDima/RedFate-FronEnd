@@ -3,11 +3,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { validazioneGuard } from './validazione.guard';
+import { UomoComponent } from './Categorie/uomo/uomo.component';
+import { DonnaComponent } from './Categorie/donna/donna.component';
+import { UnisexComponent } from './Categorie/unisex/unisex.component';
+import { CatalogoComponent } from './Categorie/catalogo/catalogo.component';
 
 const routes: Routes = [
 
-  { path: "login", component: LoginComponent },
   { path: "", component: HomePageComponent },
+  { path: "Uomo", component: UomoComponent },
+  { path: "Donna", component: DonnaComponent },
+  { path: "Unisex", component: UnisexComponent },
+  { path: "Catalogo", component: CatalogoComponent },
+
+  { path: "login", component: LoginComponent },
+
 
 ];
 
