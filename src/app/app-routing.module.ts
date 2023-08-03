@@ -6,9 +6,14 @@ import { validazioneGuard } from './validazione.guard';
 
 const routes: Routes = [
 
-  { path: "", component: LoginComponent },
-  { path: "home", component: HomePageComponent, canActivate: [validazioneGuard] }
+  { path: "login", component: LoginComponent },
+  { path: "", component: HomePageComponent },
+
 ];
+
+// , canActivate: [validazioneGuard]
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
