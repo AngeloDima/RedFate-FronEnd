@@ -8,11 +8,11 @@ import { UtenteService } from 'src/app/CentroDati/utente.service';
 })
 export class Sec1BannerComponent implements OnInit {
 
-  prova: any
+  utenteVerificato: any
 
   constructor(private ute: UtenteService) { }
   ngOnInit(): void {
-    this.prova = this.ute.utenteLoggato
+    this.utenteVerificato = this.ute.utenteLoggato
     console.log("ciao");
 
   }
