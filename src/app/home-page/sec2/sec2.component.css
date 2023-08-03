@@ -79,3 +79,17 @@
   margin: 0px 40% 0px 10px;
   line-height: 30px;
 }
+
+
+button{
+  margin: 60px 0px 0px 10px;
+  padding: 13px 47px;
+  background-color: #c10124;
+  border: none;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(237, 237, 237);
+  letter-spacing: 1px;
+  font-size: 1rem;
+
+}
