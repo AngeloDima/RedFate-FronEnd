@@ -16,6 +16,7 @@ import { UnisexComponent } from './Categorie/unisex/unisex.component';
 import { CatalogoComponent } from './Categorie/catalogo/catalogo.component';
 import { Sec2Component } from './home-page/sec2/sec2.component';
 import { Sec3FotoDestraComponent } from './home-page/sec3-foto-destra/sec3-foto-destra.component';
+import { Sec4DueFotoComponent } from './home-page/sec4-due-foto/sec4-due-foto.component';
 
 
 
@@ -31,7 +32,8 @@ import { Sec3FotoDestraComponent } from './home-page/sec3-foto-destra/sec3-foto-
     UnisexComponent,
     CatalogoComponent,
     Sec2Component,
-    Sec3FotoDestraComponent
+    Sec3FotoDestraComponent,
+    Sec4DueFotoComponent
   ],
   imports: [
     BrowserModule,
