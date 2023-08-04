@@ -10,7 +10,18 @@
 
 .card{
   width: 350px;
-  height: 500px;
+  height: 600px;
   background-color: #c20124;
 }
 
+.up{
+  width: 100%;
+  height: 80%;
+  background-color: aliceblue;
+}
+
+.down{
+  width: 100%;
+  height: 20%;
+  background-color: rgb(8, 92, 165);
+}
