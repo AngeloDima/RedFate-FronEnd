@@ -1,25 +1,28 @@
 .container{
   width: 100%;
   height: 80vh;
-  background-color: aquamarine;
+  background-color: whitesmoke;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  /* gap: 40px; */
   flex-direction: column;
 }
 
   .upC{
     width: 100%;
     height: 20%;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 8px;
+    color: rgba(0, 0, 0, 0.725);
   }
 
 
   .downC{
     width: 100%;
     height: 80%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 
     display: flex;
     justify-content: center;
@@ -28,8 +31,8 @@
   }
 
 .card{
-  width: 350px;
-  height: 600px;
+  width: 330px;
+  height: 560px;
   background-color: #c20124;
 }
 
