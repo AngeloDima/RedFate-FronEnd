@@ -3,7 +3,7 @@
   height: 40vh;
   background-color: red;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -16,9 +16,10 @@
 
 
 .center{
-  width: 50%;
+  width: 30%;
   height: 90%;
   background-color: rgb(100, 0, 194);
+  margin: 0px 50px;
 }
 
 
