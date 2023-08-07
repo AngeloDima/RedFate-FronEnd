@@ -1,0 +1,29 @@
+.container{
+  width: 100%;
+  height: 40vh;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.sx{
+  width: 20%;
+  height: 90%;
+  background-color: blueviolet;
+}
+
+
+.center{
+  width: 50%;
+  height: 90%;
+  background-color: rgb(100, 0, 194);
+}
+
+
+.dx{
+  width: 20%;
+  height: 90%;
+  background-color: rgb(69, 0, 134);
+}
