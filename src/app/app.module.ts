@@ -18,6 +18,7 @@ import { Sec2Component } from './home-page/sec2/sec2.component';
 import { Sec3FotoDestraComponent } from './home-page/sec3-foto-destra/sec3-foto-destra.component';
 import { Sec4DueFotoComponent } from './home-page/sec4-due-foto/sec4-due-foto.component';
 import { Sec5PopolariComponent } from './home-page/sec5-popolari/sec5-popolari.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -35,7 +36,8 @@ import { Sec5PopolariComponent } from './home-page/sec5-popolari/sec5-popolari.c
     Sec2Component,
     Sec3FotoDestraComponent,
     Sec4DueFotoComponent,
-    Sec5PopolariComponent
+    Sec5PopolariComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
