@@ -1,30 +1,64 @@
+a{
+  color: rgba(255, 255, 255, 0.926);
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+h3{
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 6px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgba(255, 255, 255, 0.941);
+  font-weight: 500;
+
+}
+
 .container{
   width: 100%;
   height: 40vh;
-  background-color: red;
+  background-color:#c20124;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 
 .sx{
   width: 20%;
   height: 90%;
-  background-color: blueviolet;
+  background-color: rgba(255, 255, 255, 0.119);
+  text-align: start;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
 }
 
 
 .center{
   width: 30%;
   height: 90%;
-  background-color: rgb(100, 0, 194);
+  background-color: rgba(255, 255, 255, 0.119);
   margin: 0px 50px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
 }
 
 
 .dx{
   width: 20%;
   height: 90%;
-  background-color: rgb(69, 0, 134);
+  background-color: rgba(255, 255, 255, 0.119);
+  text-align: end;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
