@@ -8,16 +8,20 @@ import { UtenteService } from 'src/app/CentroDati/utente.service';
 })
 export class Sec1BannerComponent implements OnInit {
 
-  utenteVerificato: any
+  utenteVerificato: any;
+  toggle: boolean = false;
 
   constructor(private ute: UtenteService) { }
-  ngOnInit(): void {
-    this.utenteVerificato = this.ute.utenteLoggato
-    console.log("ciao");
 
+  ngOnInit(): void {
+    this.utenteVerificato = this.ute.utenteLoggato;
   }
 
+  isToggle() {
+    this.toggle = !this.toggle;
+  }
+
+  closeMenu() {
+    this.toggle = false;
+  }
 }
-
-
-

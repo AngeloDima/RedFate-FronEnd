@@ -1,17 +1,17 @@
 <div class="container">
   <div class="up">
     <a href="/login" *ngIf="utenteVerificato.length === 0">Login</a>
-    <nav>
-      <div id="hamburger">
-        <div class="linee"></div>
-        <div class="linee"></div>
-        <div class="linee"></div>
-      </div>
-      <a routerLink="/Uomo">Uomo</a>
-      <a routerLink="/Donna">Donna</a>
-      <a routerLink="/Unisex">Unisex</a>
-      <a routerLink="/Catalogo">Catalogo</a>
+    <nav [ngClass]="{'open': toggle}">
+      <a routerLink="/Uomo" (click)="closeMenu()">Uomo</a>
+      <a routerLink="/Donna" (click)="closeMenu()">Donna</a>
+      <a routerLink="/Unisex" (click)="closeMenu()">Unisex</a>
+      <a routerLink="/Catalogo" (click)="closeMenu()">Catalogo</a>
     </nav>
+    <div class="hamburger" (click)="isToggle()">
+      <div class="linea"></div>
+      <div class="linea"></div>
+      <div class="linea"></div>
+    </div>
   </div>
-  <div class="down"></div>
+  <div [ngClass]="{'telefono': toggle}" class="down"></div>
 </div>
