@@ -13,14 +13,13 @@
       <div class="linea"></div>
     </div>
   </div>
-  <div [ngClass]="{'telefono': toggle}">
+  <div [ngClass]="{'telefono': toggle, 'open-menu': toggle}">
     <div class="contentTelefono">
       <a *ngIf="toggle" routerLink="/Uomo" (click)="closeMenu()">Uomo</a>
       <a *ngIf="toggle" routerLink="/Donna" (click)="closeMenu()">Donna</a>
       <a *ngIf="toggle" routerLink="/Unisex" (click)="closeMenu()">Unisex</a>
       <a *ngIf="toggle" routerLink="/Catalogo" (click)="closeMenu()">Catalogo</a>
     </div>
-
   </div>
   <div class="down"></div>
 </div>

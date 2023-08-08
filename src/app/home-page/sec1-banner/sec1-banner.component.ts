@@ -25,6 +25,3 @@ export class Sec1BannerComponent implements OnInit {
     this.toggle = false;
   }
 }
-
-
-
