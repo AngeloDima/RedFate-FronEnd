@@ -104,7 +104,17 @@ nav > a{
     position: absolute;
     left: 0;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .contentTelefono{
+    width: 80%;
+    height: 80%;
+    background-color: red;
+  }
+
 }
 
 
