@@ -82,8 +82,10 @@ nav > a{
   }
 
   .hamburger {
-    width: 70px;
-    height: 70px;
+    position: absolute;
+    left: 10%;
+    width: 40px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -100,19 +102,35 @@ nav > a{
   .telefono {
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
+    /* background-color: rgb(255, 255, 255); */
     position: absolute;
     left: 0;
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
   }
 
   .contentTelefono{
     width: 80%;
     height: 80%;
-    background-color: red;
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
   }
 
 }
