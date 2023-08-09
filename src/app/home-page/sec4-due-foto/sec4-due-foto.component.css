@@ -172,8 +172,9 @@ h1{
   }
 
   .ScUpDx{
-    right: 35%;
+    right: 50%;
     top: 35%;
+    transform: translate(50%, 0px);
     height: 0;
     min-width: 0;
   }
@@ -190,11 +191,54 @@ h1{
 
 
   .ScUpSx{
-    left: 35%;
+    left: 50%;
     bottom: 1%;
+    transform: translate(-50%, 0px);
+    width: 100%;
+    text-align: center;
   }
 
   #sx{
     text-align: center;
+  }
+}
+
+
+
+@media (max-width:500px){
+  .ScUpDx > h1{
+    font-size: 2.5rem;
+  }
+  .ScUpDx > h3{
+    font-size: 1.1rem !important;
+  }
+
+  .ScUpDx{
+    top: 37%;
+  }
+
+  .box1{
+    width: 75%;
+  }
+
+}
+
+
+@media (max-width:370px){
+
+
+  .ScUpDx{
+    top: 37%;
+  }
+
+  .box1{
+    width: 100%;
+  }
+
+  .ScUpSx > h1{
+    font-size: 2.5rem;
+  }
+  .ScUpSx > h3{
+    font-size: 1.1rem !important;
   }
 }
