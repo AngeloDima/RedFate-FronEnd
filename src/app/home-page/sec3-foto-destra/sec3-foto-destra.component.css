@@ -146,3 +146,47 @@ a{
     margin-bottom: 0px;
   }
 }
+
+
+@media (max-width:750px){
+  h1{
+    font-size: 6rem;
+  }
+}
+
+@media (max-width:580px){
+  h1{
+    font-size: 4.5rem;
+  }
+
+  .upCenter{
+    top: 78%;
+    left: 2%;
+  }
+}
+
+
+
+@media (max-width:460px){
+  h1{
+    font-size: 3rem;
+  }
+
+
+  .upCenter{
+    top: 82%;
+    left: 2%;
+  }
+}
+
+
+@media (max-width:351px){
+  h1{
+    font-size: 3.6rem;
+  }
+
+  .upCenter{
+    top: 72%;
+    left: 2%;
+  }
+}
