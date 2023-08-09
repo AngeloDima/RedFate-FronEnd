@@ -190,3 +190,21 @@ button{
     margin: 0px !important ;
   }
 }
+
+
+@media (max-width:650px){
+  .sx{
+    width: 400px !important;
+    height: 400px !important;
+  }
+
+  .bloccoFoto1{
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .bloccoFoto2{
+    width: 250px !important;
+    height: 250px !important;
+  }
+}
