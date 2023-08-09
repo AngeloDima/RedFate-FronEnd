@@ -60,3 +60,94 @@ p{
   font-family: 'Roboto Condensed', sans-serif;
   color: aliceblue;
 }
+
+
+@media (max-width:1500px){
+  .card{
+    width: 300px;
+    height: 530px;
+  }
+}
+
+
+@media (max-width:1360px){
+  .card{
+    width: 250px;
+    height: 500px;
+  }
+}
+
+
+@media (max-width:1140px){
+  .card{
+    width: 220px;
+    height: 450px;
+  }
+}
+
+
+
+@media (max-width:1020px){
+  .card:last-child{
+    display: none;
+  }
+  .card{
+    width: 250px;
+    height: 500px;
+  }
+}
+
+
+@media (max-width:870px){
+
+  .card{
+    width: 220px;
+    height: 470px;
+  }
+}
+
+
+@media (max-width:770px){
+
+  .container{
+    height: 0%;
+    padding-top: 100px;
+  }
+
+  .downC{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .card:last-child{
+    display: block;
+  }
+
+  .card{
+    width: 290px;
+    height: 440px;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+@media (max-width:596px){
+  .card{
+    width: 75%;
+    height: 600px;
+  }
+
+  .upC{
+    margin-bottom: 30px;
+  }
+
+  .up{
+    height: 85%;
+  }
+
+  .down{
+    height: 15%;
+  }
+}
