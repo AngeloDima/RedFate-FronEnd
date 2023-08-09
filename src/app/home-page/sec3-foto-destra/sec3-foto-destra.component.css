@@ -85,3 +85,64 @@ a{
   text-decoration: underline;
   color: #252525;
 }
+
+
+
+@media (max-width: 1620px){
+  .upCenter{
+    left: 17%;
+  }
+}
+
+
+@media (max-width: 1420px){
+  .upCenter{
+    left: 15% ;
+  }
+}
+
+@media (max-width: 1300px){
+  .upCenter{
+    left: 13% ;
+  }
+}
+
+@media (max-width: 1170px){
+  .upCenter{
+    left: 10% ;
+  }
+}
+
+@media (max-width: 1040px){
+  .upCenter{
+    left: 7% ;
+  }
+}
+
+
+@media (max-width: 925px){
+  .sx{
+    width: 0%;
+  }
+
+  .dx{
+    width: 100%;
+  }
+
+  .upCenter{
+    top: 70%;
+    left: 2%;
+  }
+
+  p{
+    display: none;
+  }
+
+  h3{
+    display: none;
+  }
+
+  h1{
+    margin-bottom: 0px;
+  }
+}
