@@ -208,3 +208,23 @@ button{
     height: 250px !important;
   }
 }
+
+
+
+@media (max-width:430px){
+
+  .sx{
+    width: 320px !important;
+    height: 320px !important;
+
+  }
+
+  .bloccoFoto1{
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .bloccoFoto2{
+    display: none;
+  }
+}
