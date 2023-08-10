@@ -39,7 +39,10 @@
 .sx .bloccoFoto1{
   width: 500px;
   height: 500px;
-  background-color: blue;
+  /* background-color: blue; */
+  background-image: url("https://i.pinimg.com/564x/0c/4b/99/0c4b992e3c0a5ab14a41d955f05c9821.jpg");
+  background-position:top;
+  background-size: cover;
   position: absolute;
   top: 30px;
   left: 100px;
@@ -49,7 +52,10 @@
 .sx .bloccoFoto2{
   width: 400px;
   height: 400px;
-  background-color: rgb(0, 0, 154);
+  /* background-color: rgb(0, 0, 154); */
+  background-image: url("https://i.pinimg.com/564x/b7/e9/d8/b7e9d855d5687ec3612353e2cbdd02f2.jpg");
+  background-position:top;
+  background-size: cover;
   position: absolute;
   bottom: 0px;
   right: 100px;
