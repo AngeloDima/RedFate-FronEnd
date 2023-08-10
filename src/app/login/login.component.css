@@ -54,8 +54,9 @@ height: 100%;
 
 
 .upCenter{
-  width: 25%;
-
+  /* width: 25%; */
+  padding: 0px 40px;
+  /* border: 3px solid green; */
   background-color: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
@@ -96,7 +97,7 @@ height: 100%;
 }
 
 .center > input{
-  width: 70%;
+  width: 250px;
   margin: 10px 0px;
   padding: 10px 20px 10px 5px;
   border-radius: 5px;
