@@ -17,7 +17,9 @@
 .dx{
   width: 65%;
   height: 90%;
-  background-color: #c20124;
+  /* background-color: #c20124; */
+  background-image: url("https://img.freepik.com/free-photo/young-woman-smiling-isolated-red_23-2149088353.jpg?w=996&t=st=1691660602~exp=1691661202~hmac=186f11a5b9ed9c5a36b917ada13d07bb24fa5e3328cae1ff959bdf1c5771d2f3");
+  background-size: cover;
   position: relative;
 }
 

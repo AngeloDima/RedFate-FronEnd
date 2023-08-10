@@ -1,1 +1,16 @@
-<p>catalogo works!</p>
+<div class="container">
+  <div class="up">
+    <a href="/login" *ngIf="utenteVerificato.length === 0">Login</a>
+    <nav [ngClass]="{'open': toggle}">
+      <a routerLink="/Uomo" (click)="closeMenu()">Uomo</a>
+      <a routerLink="/Donna" (click)="closeMenu()">Donna</a>
+      <a routerLink="/Unisex" (click)="closeMenu()">Unisex</a>
+      <a routerLink="/Catalogo" (click)="closeMenu()">Catalogo</a>
+    </nav>
+    <div class="hamburger" (click)="isToggle()">
+      <div class="linea"></div>
+      <div class="linea"></div>
+      <div class="linea"></div>
+    </div>
+  </div>
+</div>
