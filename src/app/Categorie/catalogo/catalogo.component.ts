@@ -19,6 +19,8 @@ export class CatalogoComponent implements OnInit {
   ngOnInit() {
     this.utenteVerificato = this.ute.utenteLoggato;
 
+
+    //CHIAMATA PER I PRODOTTI
     this.prod.getAllProductData().subscribe(
       (data) => {
         // 'data' è un array che contiene i risultati combinati delle chiamate HTTP
@@ -31,6 +33,8 @@ export class CatalogoComponent implements OnInit {
     );
   }
 
+
+  //PER IL MENU
   isToggle() {
     this.toggle = !this.toggle;
   }

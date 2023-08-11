@@ -16,7 +16,9 @@
 
   <div class="prodotti" *ngFor="let d of combinedData">
     <div *ngFor="let pro of d">
-      {{ pro.titolo }}
+      <h3> {{pro.titolo}} </h3>
+      <p> {{pro.descrizione}} </p>
+      <h4> {{pro.prezzo}} </h4>
     </div>
   </div>
 
