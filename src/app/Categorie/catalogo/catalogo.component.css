@@ -74,6 +74,9 @@ nav > a {
   height: 400px;
   background-color: bisque;
 
+  display: flex;
+  flex-direction: column;
+
 }
 
 
