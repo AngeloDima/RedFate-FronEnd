@@ -62,18 +62,16 @@ nav > a {
 
 .down{
   width: 100%;
-
-
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: space-evenly;
+  margin: 20px 0px;
 }
 
 .prodotti{
   width: 300px;
   height: 400px;
   background-color: bisque;
-  margin: 30px 30px 0px 0px;
 }
 
 
