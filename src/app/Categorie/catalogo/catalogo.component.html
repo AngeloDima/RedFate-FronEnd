@@ -13,4 +13,11 @@
       <div class="linea"></div>
     </div>
   </div>
+
+  <div class="prodotti" *ngFor="let d of combinedData">
+    <div *ngFor="let pro of d">
+      {{ pro.titolo }}
+    </div>
+  </div>
+
 </div>

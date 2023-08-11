@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProdottiService } from 'src/app/CentroDati/prodotti.service';
 import { UtenteService } from 'src/app/CentroDati/utente.service';
 
 @Component({
@@ -8,14 +9,26 @@ import { UtenteService } from 'src/app/CentroDati/utente.service';
 })
 export class CatalogoComponent implements OnInit {
 
-
   utenteVerificato: any;
   toggle: boolean = false;
 
-  constructor(private ute: UtenteService) { }
+  constructor(private ute: UtenteService, private prod: ProdottiService) { }
 
-  ngOnInit(): void {
+  combinedData: any[] = [];
+
+  ngOnInit() {
     this.utenteVerificato = this.ute.utenteLoggato;
+
+    this.prod.getAllProductData().subscribe(
+      (data) => {
+        // 'data' è un array che contiene i risultati combinati delle chiamate HTTP
+        this.combinedData = data;
+        console.log(this.combinedData);
+      },
+      (error) => {
+        console.error('An error occurred:', error);
+      }
+    );
   }
 
   isToggle() {
@@ -26,4 +39,5 @@ export class CatalogoComponent implements OnInit {
     this.toggle = false;
   }
 
+  //ALL PRODUCT
 }

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, forkJoin } from 'rxjs';
 
 
 @Injectable({
@@ -33,6 +33,7 @@ export class UtenteService {
       }
     });
   }
+
 
 
 
