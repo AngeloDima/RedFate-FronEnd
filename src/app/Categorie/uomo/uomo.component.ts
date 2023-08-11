@@ -9,20 +9,42 @@ import { ProdottiService } from 'src/app/CentroDati/prodotti.service';
 export class UomoComponent {
   constructor(private prod: ProdottiService) {
     this.containerFelpe = [];
+    this.containerPantaloni = [];
   }
 
   containerFelpe: any[] = [];
+  containerPantaloni: any[] = [];
 
-  titolo: string = '';
-  descrizione: string = '';
-  prezzo: number | null = null;
+
+
+  titoloF: string
+  descrizioneF: string
+  prezzoF: number
+
+  titoloP: string
+  descrizioneP: string
+  prezzoP: number
+
 
   createFelpa(): void {
-    if (this.titolo && this.descrizione && this.prezzo !== null) {
-      this.prod.PostFelpe(this.descrizione, this.prezzo, this.titolo).subscribe((response) => {
+    if (this.titoloF && this.descrizioneF && this.prezzoF) {
+      this.prod.PostFelpe(this.descrizioneF, this.prezzoF, this.titoloF).subscribe((response) => {
         this.containerFelpe.push(response);
         console.log("POST", this.containerFelpe);
       });
     }
   }
+
+
+  createPantaloni(): void {
+    if (this.titoloP && this.descrizioneP && this.prezzoP) {
+      this.prod.PostPantaloni(this.descrizioneP, this.prezzoP, this.titoloP).subscribe((response) => {
+        this.containerPantaloni.push(response);
+        console.log("POST", this.containerPantaloni);
+      });
+    }
+  }
 }
+
+
+

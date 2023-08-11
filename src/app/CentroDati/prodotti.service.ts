@@ -26,6 +26,16 @@ export class ProdottiService {
 
     return this.http.post<any>(this.urlFelpePost, body, { headers });
   }
+
+
+  urlPostPantaloniPost: string = "http://localhost:8080/pantaloni/create"
+  PostPantaloni(descrizione: string, prezzo: number, titolo: string): Observable<any> {
+    const body = { titolo: titolo, descrizione: descrizione, prezzo: prezzo };
+    const headers = { 'Content-Type': 'application/json' };
+
+    return this.http.post<any>(this.urlPostPantaloniPost, body, { headers }); // Correggi qui
+  }
+
 }
 
 

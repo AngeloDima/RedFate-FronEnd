@@ -20,12 +20,10 @@ export class CatalogoComponent implements OnInit {
   ngOnInit() {
     this.utenteVerificato = this.ute.utenteLoggato;
 
-
-    //CHIAMATA PER I PRODOTTI
     this.prod.getAllProductData().subscribe(
       (data) => {
-        // 'data' è un array che contiene i risultati combinati delle chiamate HTTP
-        this.combinedData = data;
+        // Unisci i due array ottenuti dalle chiamate alle API in un unico array
+        this.combinedData = data[0].concat(data[1]);
         console.log(this.combinedData);
       },
       (error) => {
@@ -48,5 +46,8 @@ export class CatalogoComponent implements OnInit {
 
 
 }
+
+
+
 
 
