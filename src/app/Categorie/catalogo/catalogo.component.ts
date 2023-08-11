@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ProdottiService } from 'src/app/CentroDati/prodotti.service';
 import { UtenteService } from 'src/app/CentroDati/utente.service';
 
@@ -43,5 +44,9 @@ export class CatalogoComponent implements OnInit {
     this.toggle = false;
   }
 
-  //ALL PRODUCT
+
+
+
 }
+
+

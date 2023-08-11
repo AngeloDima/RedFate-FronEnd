@@ -16,7 +16,16 @@ export class ProdottiService {
     const felpeRequest = this.http.get(this.urlFelpe);
     const pantaloniRequest = this.http.get(this.urlPantaloni);
 
-    // Utilizziamo la funzione 'forkJoin' per combinare le richieste in un unico array
     return forkJoin([felpeRequest, pantaloniRequest]);
   }
+
+  urlFelpePost: string = "http://localhost:8080/felpe/create"
+  PostFelpe(descrizione: string, prezzo: number, titolo: string): Observable<any> {
+    const body = { titolo: titolo, descrizione: descrizione, prezzo: prezzo };
+    const headers = { 'Content-Type': 'application/json' };
+
+    return this.http.post<any>(this.urlFelpePost, body, { headers });
+  }
 }
+
+
