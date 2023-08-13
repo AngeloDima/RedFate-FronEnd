@@ -19,6 +19,7 @@
       <h1>Titolo:{{ d.titolo }} </h1>
       <h4>Descrizione: {{ d.descrizione }} </h4>
       <h2>Prezzo: {{ d.prezzo }} </h2>
+      <img [src]="d.immagineBase64 ? 'data:image/jpeg;base64,' + d.immagineBase64 : 'placeholder.jpg'" alt="Immagine">
     </div>
   </div>
 
