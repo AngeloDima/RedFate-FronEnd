@@ -36,6 +36,7 @@ export class UomoComponent {
   }
 
 
+
   createPantaloni(): void {
     if (this.titoloP && this.descrizioneP && this.prezzoP) {
       this.prod.PostPantaloni(this.descrizioneP, this.prezzoP, this.titoloP).subscribe((response) => {

@@ -16,10 +16,11 @@
 
   <div class="down">
     <div class="prodotti" *ngFor="let d of combinedData">
-      <h1>Titolo:{{ d.titolo }} </h1>
-      <h4>Descrizione: {{ d.descrizione }} </h4>
-      <h2>Prezzo: {{ d.prezzo }} </h2>
       <img [src]="d.immagineBase64 ? 'data:image/jpeg;base64,' + d.immagineBase64 : 'placeholder.jpg'" alt="Immagine">
+      <div class="infoProdotto">
+        <h2 id="titolo"> {{ d.titolo }} </h2>
+        <h2 id="prezzo"> {{ d.prezzo }} </h2>
+      </div>
     </div>
   </div>
 
