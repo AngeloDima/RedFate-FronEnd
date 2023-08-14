@@ -71,15 +71,28 @@ nav > a {
 }
 
 .prodotti{
-  width: 300px;
+  width: 350px;
   background-color: rgb(233, 233, 233);
 
   display: flex;
   flex-direction: column;
+  padding: 40px;
+  position: relative;
 }
 
 .prodotti > img{
   margin-bottom: 10px;
+}
+
+
+
+#AddToCart{
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  bottom: 35%;
+  right: 3%;
 }
 
 .infoProdotto{
