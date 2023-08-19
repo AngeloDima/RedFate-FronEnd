@@ -6,30 +6,25 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   templateUrl: './uomo.component.html',
   styleUrls: ['./uomo.component.css'],
   animations: [
-    trigger('fadeCard', [
-      state('void', style({ opacity: 0, transform: 'translateY(10px)' })),
-      state('*', style({ opacity: 1, transform: 'none' })),
-      transition('void => *', animate('300ms ease-in')),
-      transition('* => void', animate('300ms ease-out'))
-    ])
-  ]
+    trigger('fadeInOut', [
+      state('void', style({ opacity: 0 })),
+      state('*', style({ opacity: 1 })),
+      transition(':enter', animate('600ms ease-in')),
+      transition(':leave', animate('600ms ease-out')),
+    ]),
+  ],
 })
 export class UomoComponent {
-
-  felpe: boolean = false
+  felpe: boolean = false;
+  Pantaloni: boolean = false;
 
   showFelpe() {
     this.felpe = true;
-    console.log("booleano felpe", this.felpe);
-
+    this.Pantaloni = false;
   }
 
-  Pantaloni: boolean = false
   showPantaloni() {
     this.Pantaloni = true;
-    console.log("booleano pantaloni", this.Pantaloni);
+    this.felpe = false;
   }
 }
-
-
-
