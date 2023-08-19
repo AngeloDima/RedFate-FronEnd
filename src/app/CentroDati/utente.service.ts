@@ -17,6 +17,7 @@ export class UtenteService {
 
   utenti: any[] = []
   utenteValido: boolean = false
+  admin: string = "a"
   utenteLoggato: any[] = []
 
 

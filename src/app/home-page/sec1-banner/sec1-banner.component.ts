@@ -20,7 +20,6 @@ export class Sec1BannerComponent implements OnInit {
   isToggle() {
     this.toggle = !this.toggle;
   }
-
   closeMenu() {
     this.toggle = false;
   }

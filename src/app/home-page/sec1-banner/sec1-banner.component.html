@@ -6,8 +6,11 @@
       <a routerLink="/Donna" (click)="closeMenu()">Donna</a>
       <a routerLink="/Unisex" (click)="closeMenu()">Unisex</a>
       <a routerLink="/Catalogo" (click)="closeMenu()">Catalogo</a>
+
       <a routerLink="/admin" (click)="closeMenu()"
-        *ngIf="ute.utenteLoggato[0].nome === 'a' && ute.utenteLoggato[0].cognome === 'd'">ADMIN</a>
+        *ngIf="ute.utenteValido && ute.utenteLoggato[0].nome === ute.admin">ADMIN</a>
+
+
 
 
     </nav>
