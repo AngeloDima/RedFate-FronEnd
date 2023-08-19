@@ -18,16 +18,11 @@ const routes: Routes = [
   { path: "Catalogo", component: CatalogoComponent },
 
   { path: "login", component: LoginComponent },
-  { path: "admin", component: ADMINComponent },
-
+  { path: "admin", component: ADMINComponent, canActivate: [validazioneGuard] }
 
 
 
 ];
-
-// , canActivate: [validazioneGuard]
-
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

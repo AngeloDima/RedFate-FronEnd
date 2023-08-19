@@ -15,9 +15,6 @@ export class LoginComponent implements OnInit {
     this.log.getUtente().subscribe(utenti => {
       this.utenti = utenti
     })
-
-
-
   }
 
 

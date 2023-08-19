@@ -12,6 +12,7 @@ export const validazioneGuard: CanActivateFn = (route, state) => {
     console.log("utente verificato");
     return true
   } else {
+    console.log("riprova");
     return router.navigate(['/'])
   }
 
