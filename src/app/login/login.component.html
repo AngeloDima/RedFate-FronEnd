@@ -10,13 +10,11 @@
       <h3>Login</h3>
     </div>
     <div class="center">
-      <input type="text" name="" id="" [(ngModel)]="nome" placeholder="nome"
-        (ngModelChange)="verificoLogin(nome, cognome)">
-      <input type="text" name="" id="" [(ngModel)]="cognome" placeholder="cognome"
-        (ngModelChange)="verificoLogin(nome, cognome)">
+      <input type="text" name="" id="" [(ngModel)]="nome" placeholder="nome">
+      <input type="text" name="" id="" [(ngModel)]="cognome" placeholder="cognome">
     </div>
     <div class="down">
-      <button routerLink="../" routerLinkActive="active">Login</button>
+      <button (click)="verificoLogin(nome, cognome)" routerLink="../">Login</button>
     </div>
   </div>
 </div>
