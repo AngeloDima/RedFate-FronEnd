@@ -12,9 +12,8 @@ export class AppComponent {
 
   constructor(private router: Router) { }
 
-  prova(): boolean {
+  controlloURL(): boolean {
     const currentUrl = this.router.url;
-
 
     if (currentUrl === '/login') {
       return false; // Nascondi header e footer
