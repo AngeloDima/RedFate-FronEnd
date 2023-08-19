@@ -20,6 +20,7 @@ export class UtenteService {
   utenteLoggato: any[] = []
 
 
+
   login(nome: string, cognome: string) {
     this.getUtente().subscribe(utenti => {
       let check = utenti.find(dati => dati.nome === nome && dati.cognome === cognome);

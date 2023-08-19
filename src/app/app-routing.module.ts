@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
-import { AdminGuard } from './validazione.guard';
+import { AdminGuard } from './admin.guard';
 import { UomoComponent } from './Categorie/uomo/uomo.component';
 import { DonnaComponent } from './Categorie/donna/donna.component';
 import { UnisexComponent } from './Categorie/unisex/unisex.component';

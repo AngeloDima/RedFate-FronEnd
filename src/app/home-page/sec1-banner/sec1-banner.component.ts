@@ -11,7 +11,7 @@ export class Sec1BannerComponent implements OnInit {
   utenteVerificato: any;
   toggle: boolean = false;
 
-  constructor(private ute: UtenteService) { }
+  constructor(public ute: UtenteService) { }
 
   ngOnInit(): void {
     this.utenteVerificato = this.ute.utenteLoggato;
