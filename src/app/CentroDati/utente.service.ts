@@ -30,7 +30,7 @@ export class UtenteService {
         this.utenteValido = true;
         this.utenteLoggato.push(check);
         if (this.utenteLoggato[0].nome == "a") {
-          console.log("Utente loggato (ADMIN) :");
+          console.log("Utente loggato (ADMIN) :", this.utenteLoggato);
         } else
           console.log("Utente loggato (NORMAL) :", this.utenteLoggato);
 
