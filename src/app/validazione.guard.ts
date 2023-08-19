@@ -2,17 +2,26 @@ import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { UtenteService } from './CentroDati/utente.service';
 
-export const validazioneGuard: CanActivateFn = (route, state) => {
+export const AdminGuard: CanActivateFn = (route, state) => {
 
   const logServ = inject(UtenteService)
   const router = inject(Router)
 
 
-  if (logServ.utenteValido) {
-    console.log("utente verificato");
+  // if (logServ.utenteValido) {
+  //   console.log("TEST",logServ.utenteLoggato[0].nome);
+  //   console.log("utente verificato");
+  //   return true
+  // } else {
+  //   console.log("riprova");
+  //   return router.navigate(['/'])
+  // }
+
+  if (logServ.utenteLoggato[0].nome == "a" && logServ.utenteLoggato[0].cognome == "d") {
+    console.log("ADMIN ");
     return true
   } else {
-    console.log("riprova");
+    console.log("non sei admin");
     return router.navigate(['/'])
   }
 
