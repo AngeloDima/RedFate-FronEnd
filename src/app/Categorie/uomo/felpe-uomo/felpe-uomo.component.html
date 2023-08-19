@@ -1,4 +1,4 @@
-<div class="container" [@prova]>
-  <a href="/Uomo">INDIETRO</a>
+<div [@fadeInOut]="animationState" *ngIf="animationState === 'visible'" class="container">
+  <a (click)="leavePage()">INDIETRO</a>
   <h1>FELPE</h1>
 </div>
