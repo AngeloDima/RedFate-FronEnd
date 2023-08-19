@@ -6,21 +6,6 @@ import { UtenteService } from 'src/app/CentroDati/utente.service';
   templateUrl: './sec1-banner.component.html',
   styleUrls: ['./sec1-banner.component.css']
 })
-export class Sec1BannerComponent implements OnInit {
+export class Sec1BannerComponent {
 
-  utenteVerificato: any;
-  toggle: boolean = false;
-
-  constructor(public ute: UtenteService) { }
-
-  ngOnInit(): void {
-    this.utenteVerificato = this.ute.utenteLoggato;
-  }
-
-  isToggle() {
-    this.toggle = !this.toggle;
-  }
-  closeMenu() {
-    this.toggle = false;
-  }
 }

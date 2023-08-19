@@ -1,0 +1,116 @@
+/* Stili per i dispositivi oltre i 750px */
+
+
+
+.up {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(212, 33, 39);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+}
+
+.up > a {
+  position: absolute;
+  right: 10%;
+}
+
+nav {
+  position: absolute;
+  left: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > a {
+  padding-right: 40px;
+}
+
+.hamburger {
+  width: 25px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.hamburger > .linee {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width: 750px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 10%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 200;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Aggiungi la transizione */
+  }
+
+  .hamburger.open-menu {
+    transform: translateX(-40px); /* Sposta il menu aperto verso sinistra */
+  }
+
+  .linea {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .telefono {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+  }
+
+  .contentTelefono {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+  }
+
+  .up > a{
+    position: absolute;
+    left: 120px;
+  }
+
+}
+

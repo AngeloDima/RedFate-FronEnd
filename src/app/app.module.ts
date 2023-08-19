@@ -20,6 +20,7 @@ import { Sec4DueFotoComponent } from './home-page/sec4-due-foto/sec4-due-foto.co
 import { Sec5PopolariComponent } from './home-page/sec5-popolari/sec5-popolari.component';
 import { FooterComponent } from './footer/footer.component';
 import { ADMINComponent } from './admin/admin.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -39,7 +40,8 @@ import { ADMINComponent } from './admin/admin.component';
     Sec4DueFotoComponent,
     Sec5PopolariComponent,
     FooterComponent,
-    ADMINComponent
+    ADMINComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
