@@ -1,14 +1,12 @@
 <div class="container">
+  <router-outlet></router-outlet>
   <div class="content">
     <div class="card">
-      <h1><a [routerLink]="['/Uomo/felpe']" (click)="showFelpe()">Felpe</a></h1>
+      <h1><a [routerLink]="['/Uomo/felpe']">Felpe</a></h1>
     </div>
-    <router-outlet *ngIf="felpe"></router-outlet>
 
     <div class="card">
-      <h1><a [routerLink]="['/Uomo/pantaloni']" (click)="showPantaloni()">Pantaloni</a></h1>
+      <h1><a [routerLink]="['/Uomo/pantaloni']">pantaloni</a></h1>
     </div>
-    <router-outlet *ngIf="Pantaloni"></router-outlet>
-
   </div>
 </div>
