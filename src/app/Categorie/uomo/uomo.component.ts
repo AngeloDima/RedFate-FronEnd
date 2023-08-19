@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ProdottiService } from 'src/app/CentroDati/prodotti.service';
 
 @Component({
   selector: 'app-uomo',
@@ -8,6 +7,19 @@ import { ProdottiService } from 'src/app/CentroDati/prodotti.service';
 })
 export class UomoComponent {
 
+  felpe: boolean = false
+
+  showFelpe() {
+    this.felpe = true;
+    console.log("booleano felpe", this.felpe);
+
+  }
+
+  Pantaloni: boolean = false
+  showPantaloni() {
+    this.Pantaloni = true;
+    console.log("booleano pantaloni", this.Pantaloni);
+  }
 }
 
 

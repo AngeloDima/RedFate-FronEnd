@@ -21,6 +21,8 @@ import { Sec5PopolariComponent } from './home-page/sec5-popolari/sec5-popolari.c
 import { FooterComponent } from './footer/footer.component';
 import { ADMINComponent } from './admin/admin.component';
 import { HeaderComponent } from './header/header.component';
+import { FelpeUOMOComponent } from './Categorie/uomo/felpe-uomo/felpe-uomo.component';
+import { PantaloniUOMOComponent } from './Categorie/uomo/pantaloni-uomo/pantaloni-uomo.component';
 
 
 
@@ -41,7 +43,10 @@ import { HeaderComponent } from './header/header.component';
     Sec5PopolariComponent,
     FooterComponent,
     ADMINComponent,
-    HeaderComponent
+    HeaderComponent,
+    FelpeUOMOComponent,
+    PantaloniUOMOComponent,
+
   ],
   imports: [
     BrowserModule,

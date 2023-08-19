@@ -8,11 +8,21 @@ import { DonnaComponent } from './Categorie/donna/donna.component';
 import { UnisexComponent } from './Categorie/unisex/unisex.component';
 import { CatalogoComponent } from './Categorie/catalogo/catalogo.component';
 import { ADMINComponent } from './admin/admin.component';
+import { FelpeUOMOComponent } from './Categorie/uomo/felpe-uomo/felpe-uomo.component';
+import { PantaloniUOMOComponent } from './Categorie/uomo/pantaloni-uomo/pantaloni-uomo.component';
 
 const routes: Routes = [
 
   { path: "", component: HomePageComponent },
-  { path: "Uomo", component: UomoComponent },
+  {
+    path: "Uomo", component: UomoComponent, children:
+      [
+        { path: "felpe", component: FelpeUOMOComponent },
+        { path: "pantaloni", component: PantaloniUOMOComponent }
+      ]
+  },
+
+
   { path: "Donna", component: DonnaComponent },
   { path: "Unisex", component: UnisexComponent },
   { path: "Catalogo", component: CatalogoComponent },
