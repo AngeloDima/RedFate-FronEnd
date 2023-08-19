@@ -7,6 +7,7 @@ import { UomoComponent } from './Categorie/uomo/uomo.component';
 import { DonnaComponent } from './Categorie/donna/donna.component';
 import { UnisexComponent } from './Categorie/unisex/unisex.component';
 import { CatalogoComponent } from './Categorie/catalogo/catalogo.component';
+import { ADMINComponent } from './admin/admin.component';
 
 const routes: Routes = [
 
@@ -17,6 +18,9 @@ const routes: Routes = [
   { path: "Catalogo", component: CatalogoComponent },
 
   { path: "login", component: LoginComponent },
+  { path: "admin", component: ADMINComponent },
+
+
 
 
 ];
