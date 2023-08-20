@@ -7,14 +7,14 @@ import { Router } from '@angular/router';
   templateUrl: './felpe-uomo.component.html',
   styleUrls: ['./felpe-uomo.component.css'],
   animations: [
-    trigger('fadeInOut', [
-      state('visible', style({ opacity: 1, transform: 'scale(1)' })),
+    trigger('fadeOutUp', [
+      state('visible', style({ opacity: 1, transform: 'translateY(0)' })),
       transition('void => visible', [
-        style({ opacity: 0, transform: 'scale(0)' }),
+        style({ opacity: 0, transform: 'translateY(-100%)' }),
         animate('400ms ease-in'),
       ]),
       transition('visible => void', [
-        animate('400ms ease-out', style({ opacity: 0, transform: 'scale(0)' })),
+        animate('400ms ease-out', style({ opacity: 0, transform: 'translateY(-100%)' })),
       ]),
     ]),
   ],
