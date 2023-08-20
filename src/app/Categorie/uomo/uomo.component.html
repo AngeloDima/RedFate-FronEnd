@@ -1,12 +1,10 @@
-<div class="container">
-  <router-outlet></router-outlet>
-  <div class="content">
-    <div class="card" [@fadeInOut]>
-      <h1><a [routerLink]="['/Uomo/felpe']" (click)="showFelpe()">Felpe</a></h1>
-    </div>
+<router-outlet></router-outlet>
+<div class="content">
+  <div class="card" [@fadeInOut]>
+    <h1><a [routerLink]="['/Uomo/felpe']" (click)="showFelpe()">Felpe</a></h1>
+  </div>
 
-    <div class="card" [@fadeInOut]>
-      <h1><a [routerLink]="['/Uomo/pantaloni']" (click)="showPantaloni()">Pantaloni</a></h1>
-    </div>
+  <div class="card" [@fadeInOut]>
+    <h1><a [routerLink]="['/Uomo/pantaloni']" (click)="showPantaloni()">Pantaloni</a></h1>
   </div>
 </div>

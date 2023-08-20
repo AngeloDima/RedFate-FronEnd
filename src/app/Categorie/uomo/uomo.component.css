@@ -1,16 +1,10 @@
-.container{
-  width: 100%;
-  min-height: 100vh;
-}
 
 .content{
   width: 90%;
   margin: auto;
-  padding: 20px 0px;
-  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 }
 
 .card{
@@ -25,9 +19,11 @@
 .card:first-child{
   background-image: url("img/bannerCardFelpa.png");
   background-size: 35%;
+  margin-top: 40px;
 }
 
 .card:last-child{
   background-image: url("img/bannerPantaloni.png");
   background-size: 35%;
+  margin-bottom: 40px;
 }
