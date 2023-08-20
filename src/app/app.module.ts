@@ -23,6 +23,8 @@ import { ADMINComponent } from './admin/admin.component';
 import { HeaderComponent } from './header/header.component';
 import { FelpeUOMOComponent } from './Categorie/uomo/felpe-uomo/felpe-uomo.component';
 import { PantaloniUOMOComponent } from './Categorie/uomo/pantaloni-uomo/pantaloni-uomo.component';
+import { FelpeDonnaComponent } from './Categorie/donna/felpe-donna/felpe-donna.component';
+import { PantaloniDonnaComponent } from './Categorie/donna/pantaloni-donna/pantaloni-donna.component';
 
 
 
@@ -46,6 +48,8 @@ import { PantaloniUOMOComponent } from './Categorie/uomo/pantaloni-uomo/pantalon
     HeaderComponent,
     FelpeUOMOComponent,
     PantaloniUOMOComponent,
+    FelpeDonnaComponent,
+    PantaloniDonnaComponent,
 
   ],
   imports: [

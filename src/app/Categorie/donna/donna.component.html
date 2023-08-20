@@ -1,1 +1,10 @@
-<p>donna works!</p>
+<router-outlet></router-outlet>
+<div class="content">
+  <div class="card" [@fadeInOut]>
+    <h1><a [routerLink]="['/Donna/felpe']" (click)="showFelpe()">Felpe</a></h1>
+  </div>
+
+  <div class="card" [@fadeInOut]>
+    <h1><a [routerLink]="['/Donna/pantaloni']" (click)="showPantaloni()">Pantaloni</a></h1>
+  </div>
+</div>

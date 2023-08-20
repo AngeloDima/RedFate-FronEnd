@@ -10,6 +10,8 @@ import { CatalogoComponent } from './Categorie/catalogo/catalogo.component';
 import { ADMINComponent } from './admin/admin.component';
 import { FelpeUOMOComponent } from './Categorie/uomo/felpe-uomo/felpe-uomo.component';
 import { PantaloniUOMOComponent } from './Categorie/uomo/pantaloni-uomo/pantaloni-uomo.component';
+import { FelpeDonnaComponent } from './Categorie/donna/felpe-donna/felpe-donna.component';
+import { PantaloniDonnaComponent } from './Categorie/donna/pantaloni-donna/pantaloni-donna.component';
 
 const routes: Routes = [
 
@@ -23,7 +25,13 @@ const routes: Routes = [
   },
 
 
-  { path: "Donna", component: DonnaComponent },
+  {
+    path: "Donna", component: DonnaComponent, children:
+      [
+        { path: "felpe", component: FelpeDonnaComponent },
+        { path: "pantaloni", component: PantaloniDonnaComponent }
+      ]
+  },
   { path: "Unisex", component: UnisexComponent },
   { path: "Catalogo", component: CatalogoComponent },
 
