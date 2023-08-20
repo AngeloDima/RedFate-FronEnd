@@ -1,1 +1,4 @@
-<p>pantaloni-uomo works!</p>
+<div [@fadeOutUp]="animationState" *ngIf="animationState === 'visible'" class="container">
+  <a (click)="leavePage()">INDIETRO</a>
+  <h1>Pantaloni</h1>
+</div>

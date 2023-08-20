@@ -29,6 +29,6 @@ export class FelpeUOMOComponent {
     setTimeout(() => {
       // After the exit animation is complete, navigate to the new route
       this.router.navigate(['/Uomo']);
-    }, 400);
+    }, 300);
   }
 }

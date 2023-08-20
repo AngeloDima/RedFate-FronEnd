@@ -1,0 +1,13 @@
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 255, 225, 0.403);
+  position: absolute;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
