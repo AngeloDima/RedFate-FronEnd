@@ -15,7 +15,7 @@ export class AppComponent {
   controlloURL(): boolean {
     const currentUrl = this.router.url;
 
-    if (currentUrl === '/login' || currentUrl.startsWith('/Uomo/felpe')) {
+    if (currentUrl === '/login' || currentUrl.startsWith('/Uomo/felpe') || currentUrl.startsWith('/Uomo/pantaloni')) {
       return false; // Nascondi header e footer
     } else {
       return true; // Mostra header e footer
