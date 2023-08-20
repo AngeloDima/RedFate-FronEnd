@@ -15,10 +15,13 @@ export class AppComponent {
   controlloURL(): boolean {
     const currentUrl = this.router.url;
 
-    if (currentUrl === '/login') {
+    if (currentUrl === '/login' || currentUrl.startsWith('/Uomo/felpe')) {
       return false; // Nascondi header e footer
     } else {
       return true; // Mostra header e footer
     }
   }
+
+
 }
+
