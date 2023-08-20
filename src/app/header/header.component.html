@@ -3,8 +3,8 @@
   <nav [ngClass]="{'open': toggle}">
     <a routerLink="/Uomo" (click)="closeMenu()">Uomo</a>
     <a routerLink="/Donna" (click)="closeMenu()">Donna</a>
-    <a routerLink="/Unisex" (click)="closeMenu()">Unisex</a>
     <a routerLink="/Catalogo" (click)="closeMenu()">Catalogo</a>
+    <a routerLink="../" (click)="closeMenu()">Home</a>
 
     <a routerLink="/admin" (click)="closeMenu()"
       *ngIf="ute.utenteValido && ute.utenteLoggato[0].nome === ute.admin">ADMIN</a>
@@ -19,8 +19,8 @@
     <div class="contentTelefono">
       <a *ngIf="toggle" routerLink="/Uomo" (click)="closeMenu()">Uomo</a>
       <a *ngIf="toggle" routerLink="/Donna" (click)="closeMenu()">Donna</a>
-      <a *ngIf="toggle" routerLink="/Unisex" (click)="closeMenu()">Unisex</a>
       <a *ngIf="toggle" routerLink="/Catalogo" (click)="closeMenu()">Catalogo</a>
+      <a *ngIf="toggle" routerLink="../" (click)="closeMenu()">Home</a>
     </div>
   </div>
 </div>

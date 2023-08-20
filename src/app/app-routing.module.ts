@@ -5,7 +5,6 @@ import { LoginComponent } from './login/login.component';
 import { AdminGuard } from './admin.guard';
 import { UomoComponent } from './Categorie/uomo/uomo.component';
 import { DonnaComponent } from './Categorie/donna/donna.component';
-import { UnisexComponent } from './Categorie/unisex/unisex.component';
 import { CatalogoComponent } from './Categorie/catalogo/catalogo.component';
 import { ADMINComponent } from './admin/admin.component';
 import { FelpeUOMOComponent } from './Categorie/uomo/felpe-uomo/felpe-uomo.component';
@@ -32,7 +31,7 @@ const routes: Routes = [
         { path: "pantaloni", component: PantaloniDonnaComponent }
       ]
   },
-  { path: "Unisex", component: UnisexComponent },
+
   { path: "Catalogo", component: CatalogoComponent },
 
   { path: "login", component: LoginComponent },
