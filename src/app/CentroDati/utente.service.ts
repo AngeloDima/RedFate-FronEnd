@@ -15,9 +15,17 @@ export class UtenteService {
     return this.http.get<any[]>(this.url)
   }
 
+  urlInfo = "http://localhost:8080/infoUtente"
+  getInfoUtente(): Observable<any[]> {
+    return this.http.get<any[]>(this.urlInfo);
+  }
+
+
+
+
   utenti: any[] = []
   utenteValido: boolean = false
-  admin: string = "a"
+  admin: string = "admin"
   utenteLoggato: any[] = []
 
 
