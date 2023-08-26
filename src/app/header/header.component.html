@@ -5,6 +5,8 @@
     <a routerLink="/Donna" (click)="closeMenu()">Donna</a>
     <a routerLink="/Catalogo" (click)="closeMenu()">Catalogo</a>
     <a routerLink="../" (click)="closeMenu()">Home</a>
+    <a routerLink="/AreaRiservata" (click)="closeMenu()"
+      *ngIf="ute.utenteValido && ute.utenteLoggato[0].nome === 'prova' ">Area Utente</a>
 
     <a routerLink="/admin" (click)="closeMenu()"
       *ngIf="ute.utenteValido && ute.utenteLoggato[0].nome === ute.admin">ADMIN</a>
