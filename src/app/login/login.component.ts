@@ -9,12 +9,15 @@ import { UtenteService } from '../CentroDati/utente.service';
 export class LoginComponent implements OnInit {
 
   utenti: any[] = []
+  dataInfo: any[] = []
+
 
   constructor(private log: UtenteService) { }
   ngOnInit(): void {
     this.log.getUtente().subscribe(utenti => {
       this.utenti = utenti
     })
+
   }
 
 
@@ -26,5 +29,6 @@ export class LoginComponent implements OnInit {
     this.log.login(nome, cognome)
   }
 }
+
 
 

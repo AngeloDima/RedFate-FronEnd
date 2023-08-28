@@ -24,7 +24,7 @@ import { FelpeUOMOComponent } from './Categorie/uomo/felpe-uomo/felpe-uomo.compo
 import { PantaloniUOMOComponent } from './Categorie/uomo/pantaloni-uomo/pantaloni-uomo.component';
 import { FelpeDonnaComponent } from './Categorie/donna/felpe-donna/felpe-donna.component';
 import { PantaloniDonnaComponent } from './Categorie/donna/pantaloni-donna/pantaloni-donna.component';
-import { AreaUtenteComponent } from './area-utente/area-utente.component';
+
 
 
 
@@ -49,7 +49,7 @@ import { AreaUtenteComponent } from './area-utente/area-utente.component';
     PantaloniUOMOComponent,
     FelpeDonnaComponent,
     PantaloniDonnaComponent,
-    AreaUtenteComponent,
+
 
   ],
   imports: [
