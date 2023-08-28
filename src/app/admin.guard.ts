@@ -17,7 +17,7 @@ export const AdminGuard: CanActivateFn = (route, state) => {
   //   return router.navigate(['/'])
   // }
 
-  if (logServ.utenteLoggato[0].nome == "a" && logServ.utenteLoggato[0].cognome == "d") {
+  if (logServ.utenteLoggato[0].nome == "admin" && logServ.utenteLoggato[0].cognome == "admin") {
     console.log("ADMIN GUARD");
     return true
   } else {

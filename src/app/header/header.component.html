@@ -8,7 +8,7 @@
 
 
     <a routerLink="/admin" (click)="closeMenu()"
-      *ngIf="ute.utenteValido && ute.utenteLoggato[0].nome === ute.admin">ADMIN</a>
+      *ngIf="ute.utenteValido && ute.utenteLoggato[0].nome === 'admin'">ADMIN</a>
   </nav>
   <div class="hamburger" (click)="isToggle()">
     <div class="linea"></div>
